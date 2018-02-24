@@ -1,7 +1,11 @@
 var topics = ["Mario", "Luigi", "Princess Peach", "Bowser", "Wario", "Yoshi"];
 
 for (i = 0; i < topics.length; i++) {
-  $(".buttons").append("<button>" + topics[i] + "</button>");
+  $(".buttons").append(
+    '<button type="button" class="btn btn-outline-info">' +
+      topics[i] +
+      "</button>"
+  );
 }
 
 $("button").on("click", function() {
