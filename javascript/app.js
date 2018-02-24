@@ -1,16 +1,38 @@
 var topics = ["Mario", "Luigi", "Princess Peach", "Bowser", "Wario", "Yoshi"];
 
-for (i = 0; i < topics.length; i++) {
+function createButtons() {
+  for (i = 0; i < topics.length; i++) {
+    makeButton(topics[i]);
+  }
+}
+function makeButton(topic) {
   $(".buttons").append(
-    '<button type="button" class="btn btn-outline-info">' +
-      topics[i] +
+    '<button type="button" class="gifButton btn btn-outline-info">' +
+      topic +
       "</button>"
   );
+  bindingClicks();
+}
+createButtons();
+
+function bindingClicks() {
+  $(".gifButton").on("click", function() {
+    var buttonText = $(this).text();
+    addButtons(buttonText);
+  });
 }
 
-$("button").on("click", function() {
+$(".submitNewCharacter").on("click", function() {
+  var newCharacter = $(".newCharacterInput")
+    .val()
+    .trim();
+  console.log(newCharacter);
+  addButtons(newCharacter);
+  makeButton(newCharacter);
+});
+function addButtons(buttonText) {
   $("#gifs").html("");
-  var buttonText = $(this).text();
+  // var buttonText = $(this).text();
   var queryURL =
     "https://api.giphy.com/v1/gifs/search?q=" +
     buttonText +
@@ -32,4 +54,4 @@ $("button").on("click", function() {
       $("#gifs").append(characterImage);
     }
   });
-});
+}
