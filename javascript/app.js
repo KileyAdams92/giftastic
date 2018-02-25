@@ -10,7 +10,7 @@ function createButtons() {
 }
 function makeButton(topic) {
   $(".buttons").append(
-    '<button type="button" class="gifButton btn btn-secondary">' +
+    '<button type="button" class="gifButton mr-4 btn btn-secondary">' +
       topic +
       "</button>"
   );
@@ -28,10 +28,13 @@ $(".submitNewCharacter").on("click", function() {
   var newCharacter = $(".newCharacterInput")
     .val()
     .trim();
-  console.log(newCharacter);
-  addButtons(newCharacter);
-  makeButton(newCharacter);
+  if (newCharacter.length > 0) {
+    console.log(newCharacter);
+    addButtons(newCharacter);
+    makeButton(newCharacter);
+  }
 });
+
 function addButtons(buttonText) {
   $("#gifs").html("");
   // var buttonText = $(this).text();
