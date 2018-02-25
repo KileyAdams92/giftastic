@@ -2,6 +2,22 @@ body {
   background-image: url("images/mariobackground.png");
 }
 
+h1 {
+  text-align: center;
+  font-family: "Bangers", cursive;
+  color: red;
+  font-size: 80px;
+}
+
+p {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.gifs {
+  margin: 0;
+}
 /* container {
   background-color: white;
 } */

@@ -7,21 +7,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 </head>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="buttons">
+
+<body>
+    <div class="container-fluid">
+        <h1>Mario!</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="buttons">
+                </div>
             </div>
-            <div id="gifs"></div>
-        </div>
-        <div class="col-lg-6">
-            <input class="form-control newCharacterInput" type="text" placeholder="Type your giphy suggestion here">
-            <button type="submit" class="submitNewCharacter btn btn-primary mb-2">Submit!</button>
+            <div class="col-lg-6">
+                <input class="form-control newCharacterInput" type="text" placeholder="Type your giphy suggestion here">
+                <button type="submit" class="submitNewCharacter btn btn-primary mb-2">Submit!</button>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <span id="gifs"></span>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="javascript/app.js"></script>
-    </body>
+</body>
 
 </html>

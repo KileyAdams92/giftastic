@@ -3,6 +3,8 @@ var topics = ["Mario", "Luigi", "Princess Peach", "Bowser", "Wario", "Yoshi"];
 function createButtons() {
   for (i = 0; i < topics.length; i++) {
     makeButton(topics[i]);
+    var music = new Audio("assets/music/smb.mp3");
+    music.play();
   }
   bindingClicks();
 }
