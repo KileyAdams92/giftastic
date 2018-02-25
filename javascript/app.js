@@ -28,7 +28,8 @@ $(".submitNewCharacter").on("click", function() {
   var newCharacter = $(".newCharacterInput")
     .val()
     .trim();
-  if (newCharacter.length > 0) {
+  if (newCharacter.length > 0 && topics.indexOf(newCharacter) === -1) {
+    topics.push(newCharacter);
     console.log(newCharacter);
     addButtons(newCharacter);
     makeButton(newCharacter);
