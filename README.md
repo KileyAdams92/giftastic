@@ -8,6 +8,7 @@ Motivation
 During the course of studying web development through the University of Kansas, it became apparent that it was important to learn how to use web APIs. This project was a fundamental project in learning the techniques of using web APIs for future development.
 
 Screenshots
+
 [![Capture.png](https://s9.postimg.cc/uueybcr5r/Capture.png)](https://postimg.cc/image/3wl19m6ij/)
 [![Capture.png](https://s9.postimg.cc/azswpd9f3/Capture.png)](https://postimg.cc/image/lmmpushkb/)
 
