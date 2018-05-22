@@ -1,5 +1,9 @@
 body {
-  background-image: url("images/mariobackground.png");
+  background: url("images/mariobackground.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
@@ -17,7 +21,6 @@ p {
 
 .gifs {
   margin: 0;
-  text-align: center;
 }
 /* container {
   background-color: white;
